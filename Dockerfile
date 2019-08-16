@@ -5,7 +5,7 @@ MAINTAINER jasongwq <jasongwq@126.com>
 WORKDIR /srv/gitbook
 
 RUN git clone https://github.com/feiskyer/kubernetes-handbook.git
-WORKDIR /src/gitbook/kubernetes-handbook
+WORKDIR /srv/gitbook/kubernetes-handbook
 RUN gitbook install
 RUN gitbook mobi . kubernetes-handbook.mobi
 
